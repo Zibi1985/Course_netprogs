@@ -128,6 +128,6 @@ THE SOFTWARE.-->
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
         <script src="{{ asset('js/app.js') }}"></script>
-        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/admin.js') }}"></script>
     </body>
 </html>
