@@ -1,79 +1,83 @@
+@extends('layouts.frontend')
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
 
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
 
-                        <div class="col-xs-12 col-sm-3">
-                            <img src="http://lorempixel.com/200/200/people/?x=<?= mt_rand(1, 9999999) ?>" alt="" class="img-circle img-responsive">
-                        </div>
-                        <div class="col-xs-12 col-sm-9">
-                            <h2>Jan Nowak</h2>
+                            <div class="col-xs-12 col-sm-3">
+                                <img src="http://lorempixel.com/200/200/people/?x=<?= mt_rand(1, 9999999) ?>" alt="" class="img-circle img-responsive">
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <h2>Jan Nowak</h2>
 
-                        </div>
+                            </div>
 
 
-                        <div class="col-sm-12 top-buffer">
-                            <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> 7 Polubionych obiektów </button>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <a href="">  Cras justo odio</a>
+                            <div class="col-sm-12 top-buffer">
+                                <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> 7 Polubionych obiektów </button>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="">  Cras justo odio</a>
 
-                                </li>
-                                <li class="list-group-item">
-                                    <a href=""> Dapibus ac facilisis in</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href=""> Dapibus ac facilisis in</a>
 
-                                </li>
-                                <li class="list-group-item">
-                                    <a href=""> Morbi leo risus</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href=""> Morbi leo risus</a>
 
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-12">
-                            <button class="btn btn-info btn-block"><span class="fa fa-user"></span> 245 Polubionych artykułów </button>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <a href="">Cras justo odio</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn btn-info btn-block"><span class="fa fa-user"></span> 245 Polubionych artykułów </button>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="">Cras justo odio</a>
 
-                                </li>
-                                <li class="list-group-item">
-                                    <a href=""> Dapibus ac facilisis in</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href=""> Dapibus ac facilisis in</a>
 
-                                </li>
-                                <li class="list-group-item">
-                                    <a href=""> Morbi leo risus</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href=""> Morbi leo risus</a>
 
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-12">
-                            <button type="button" class="btn btn-primary btn-block"><span class="fa fa-gear"></span> 48 Komentarzy </button>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <a href="">Cras justo odio</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-primary btn-block"><span class="fa fa-gear"></span> 48 Komentarzy </button>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="">Cras justo odio</a>
 
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="">Dapibus ac facilisis in</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="">Dapibus ac facilisis in</a>
 
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="">Morbi leo risus</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="">Morbi leo risus</a>
 
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
-</div>
+@endsection
+
 
 
 

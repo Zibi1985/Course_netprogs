@@ -38,7 +38,7 @@ THE SOFTWARE.-->
           <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body>
 
@@ -104,21 +104,21 @@ THE SOFTWARE.-->
             </div>
         </div>
 
-        <?php include 'frontend/' . $view . '.blade.php'; ?>
+        @yield('content')
 
         <div class="container-fluid">
 
             <div class="row mobile-apps">
 
                 <div class="col-md-6 col-xs-12">
-                    <img src="images/mobile-app.png" alt="" class="img-responsive center-block">
+                    <img src="{{ asset('images/mobile-app.png') }}" alt="" class="img-responsive center-block">
                 </div>
 
                 <div class="col-md-6 col-xs-12">
                     <h1 class="text-center">Pobierz aplikację na&nbsp;telefon.</h1>
-                    <a href="#"><img class="img-responsive center-block" src="images/google.png" alt=""></a><br><br>
-                    <a href="#"><img class="img-responsive center-block" src="images/apple.png" alt=""></a><br><br>
-                    <a href="#"><img class="img-responsive center-block" src="images/windows.png" alt=""></a>
+                    <a href="#"><img class="img-responsive center-block" src="{{ asset('images/google.png') }}" alt=""></a><br><br>
+                    <a href="#"><img class="img-responsive center-block" src="{{ asset('images/apple.png') }}" alt=""></a><br><br>
+                    <a href="#"><img class="img-responsive center-block" src="{{ asset('images/windows.png') }}" alt=""></a>
 
                 </div>
 
@@ -139,6 +139,6 @@ THE SOFTWARE.-->
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="js/app.js"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>

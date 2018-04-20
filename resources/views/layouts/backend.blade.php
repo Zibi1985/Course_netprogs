@@ -42,7 +42,7 @@ THE SOFTWARE.-->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
         <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
 
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -108,7 +108,10 @@ THE SOFTWARE.-->
 
                     </div>-->
 
-                    <?php include 'backend/' . $view . '.blade.php'; ?>
+                    
+                    @yield('content')
+
+
                 </div>
             </div>
         </div>
@@ -124,7 +127,7 @@ THE SOFTWARE.-->
         <script src="http://getbootstrap.com/assets/js/vendor/holder.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/admin.js"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
