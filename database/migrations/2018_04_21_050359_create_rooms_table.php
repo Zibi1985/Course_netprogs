@@ -19,8 +19,8 @@ class CreateRoomsTable extends Migration
             $table->integer('room_size');
             $table->integer('price');
             $table->text('description');
-            $table->integer('object_id')->unsigned();
-            $table->foreign('object_id')->references('id')->on('objects')->onDelate('cascade');            
+            $table->integer('hotel_id')->unsigned();
+            $table->foreign('hotel_id')->references('id')->on('hotels')->onDelate('cascade');            
         });
     }
 

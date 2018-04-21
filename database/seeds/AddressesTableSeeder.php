@@ -18,7 +18,7 @@ class AddressesTableSeeder extends Seeder
 	        DB::table('addresses')->insert([
 	        	'number' => $faker->numberBetween(1,20),
 	        	'street' => $faker->streetName,
-	        	'object_id' => $faker->unique()->numberBetween(1,20),
+	        	'hotel_id' => $faker->unique()->numberBetween(1,20),
         	]);
 
     	}

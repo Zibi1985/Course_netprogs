@@ -19,8 +19,8 @@ class CreateArticlesTable extends Migration
             $table->text('content');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelate('cascade');
-            $table->integer('object_id')->unsigned();
-            $table->foreign('object_id')->references('id')->on('objects')->onDelate('cascade');
+            $table->integer('hotel_id')->unsigned();
+            $table->foreign('hotel_id')->references('id')->on('hotels')->onDelate('cascade');
             $table->dateTime('created_at');
         });
     }

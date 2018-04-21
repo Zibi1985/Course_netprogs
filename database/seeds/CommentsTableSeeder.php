@@ -19,7 +19,7 @@ class CommentsTableSeeder extends Seeder
 	        	'content' => $faker->text(500),
 	        	'rating' => $faker->numberBetween(1,20),
 	        	'user_id' => $faker->numberBetween(1,20),
-	        	'commentable_type' => $faker->randomElement(['App\Object', 'App\Article']),
+	        	'commentable_type' => $faker->randomElement(['App\Hotel', 'App\Article']),
 	        	'commentable_id' => $faker->numberBetween(1,10),
         	]);
 
