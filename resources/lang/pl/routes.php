@@ -10,4 +10,5 @@ return [
 	'saveobject'=>'zapiszobiekt',
 	'profile'=>'profil',
 	'saveroom'=>'zapiszpokoj',
+	'cities'=>'miasta'
 ];
